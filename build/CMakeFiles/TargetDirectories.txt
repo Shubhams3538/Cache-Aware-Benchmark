@@ -1,0 +1,8 @@
+/home/murphy/Downloads/cache-aware-benchmark/build/CMakeFiles/edit_cache.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/CMakeFiles/rebuild_cache.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/false_sharing/CMakeFiles/false_sharing.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/false_sharing/CMakeFiles/edit_cache.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/false_sharing/CMakeFiles/rebuild_cache.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/cache_alignment/CMakeFiles/cache_alignment.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/cache_alignment/CMakeFiles/edit_cache.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/cache_alignment/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wno-volatile CMakeFiles/cache_alignment.dir/cache_alignment.cpp.o -o cache_alignment 
