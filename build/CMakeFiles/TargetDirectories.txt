@@ -6,3 +6,6 @@
 /home/murphy/Downloads/cache-aware-benchmark/build/cache_alignment/CMakeFiles/cache_alignment.dir
 /home/murphy/Downloads/cache-aware-benchmark/build/cache_alignment/CMakeFiles/edit_cache.dir
 /home/murphy/Downloads/cache-aware-benchmark/build/cache_alignment/CMakeFiles/rebuild_cache.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/soa_vs_aos/CMakeFiles/soa_vs_aos.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/soa_vs_aos/CMakeFiles/edit_cache.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/soa_vs_aos/CMakeFiles/rebuild_cache.dir

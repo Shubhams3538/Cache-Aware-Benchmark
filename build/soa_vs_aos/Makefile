@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/murphy/Downloads/cache-aware-benchmark/build/CMakeFiles /home/murphy/Downloads/cache-aware-benchmark/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/murphy/Downloads/cache-aware-benchmark/build/CMakeFiles /home/murphy/Downloads/cache-aware-benchmark/build/soa_vs_aos//CMakeFiles/progress.marks
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soa_vs_aos/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/murphy/Downloads/cache-aware-benchmark/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soa_vs_aos/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,57 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soa_vs_aos/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soa_vs_aos/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named false_sharing
+# Convenience name for target.
+soa_vs_aos/CMakeFiles/soa_vs_aos.dir/rule:
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soa_vs_aos/CMakeFiles/soa_vs_aos.dir/rule
+.PHONY : soa_vs_aos/CMakeFiles/soa_vs_aos.dir/rule
 
-# Build rule for target.
-false_sharing: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 false_sharing
-.PHONY : false_sharing
-
-# fast build rule for target.
-false_sharing/fast:
-	$(MAKE) $(MAKESILENT) -f false_sharing/CMakeFiles/false_sharing.dir/build.make false_sharing/CMakeFiles/false_sharing.dir/build
-.PHONY : false_sharing/fast
-
-#=============================================================================
-# Target rules for targets named cache_alignment
-
-# Build rule for target.
-cache_alignment: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cache_alignment
-.PHONY : cache_alignment
-
-# fast build rule for target.
-cache_alignment/fast:
-	$(MAKE) $(MAKESILENT) -f cache_alignment/CMakeFiles/cache_alignment.dir/build.make cache_alignment/CMakeFiles/cache_alignment.dir/build
-.PHONY : cache_alignment/fast
-
-#=============================================================================
-# Target rules for targets named soa_vs_aos
-
-# Build rule for target.
-soa_vs_aos: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soa_vs_aos
+# Convenience name for target.
+soa_vs_aos: soa_vs_aos/CMakeFiles/soa_vs_aos.dir/rule
 .PHONY : soa_vs_aos
 
 # fast build rule for target.
 soa_vs_aos/fast:
-	$(MAKE) $(MAKESILENT) -f soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build.make soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build.make soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build
 .PHONY : soa_vs_aos/fast
+
+soa_vs_aos.o: soa_vs_aos.cpp.o
+.PHONY : soa_vs_aos.o
+
+# target to build an object file
+soa_vs_aos.cpp.o:
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build.make soa_vs_aos/CMakeFiles/soa_vs_aos.dir/soa_vs_aos.cpp.o
+.PHONY : soa_vs_aos.cpp.o
+
+soa_vs_aos.i: soa_vs_aos.cpp.i
+.PHONY : soa_vs_aos.i
+
+# target to preprocess a source file
+soa_vs_aos.cpp.i:
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build.make soa_vs_aos/CMakeFiles/soa_vs_aos.dir/soa_vs_aos.cpp.i
+.PHONY : soa_vs_aos.cpp.i
+
+soa_vs_aos.s: soa_vs_aos.cpp.s
+.PHONY : soa_vs_aos.s
+
+# target to generate assembly for a file
+soa_vs_aos.cpp.s:
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build.make soa_vs_aos/CMakeFiles/soa_vs_aos.dir/soa_vs_aos.cpp.s
+.PHONY : soa_vs_aos.cpp.s
 
 # Help Target
 help:
@@ -163,9 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cache_alignment"
-	@echo "... false_sharing"
 	@echo "... soa_vs_aos"
+	@echo "... soa_vs_aos.o"
+	@echo "... soa_vs_aos.i"
+	@echo "... soa_vs_aos.s"
 .PHONY : help
 
 
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

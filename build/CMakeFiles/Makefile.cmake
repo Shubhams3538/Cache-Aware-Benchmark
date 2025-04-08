@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "/home/murphy/Downloads/cache-aware-benchmark/cache_alignment/CMakeLists.txt"
   "/home/murphy/Downloads/cache-aware-benchmark/false_sharing/CMakeLists.txt"
+  "/home/murphy/Downloads/cache-aware-benchmark/soa_vs_aos/CMakeLists.txt"
   "/usr/share/cmake-3.28/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
@@ -44,10 +45,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "false_sharing/CMakeFiles/CMakeDirectoryInformation.cmake"
   "cache_alignment/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "soa_vs_aos/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "false_sharing/CMakeFiles/false_sharing.dir/DependInfo.cmake"
   "cache_alignment/CMakeFiles/cache_alignment.dir/DependInfo.cmake"
+  "soa_vs_aos/CMakeFiles/soa_vs_aos.dir/DependInfo.cmake"
   )

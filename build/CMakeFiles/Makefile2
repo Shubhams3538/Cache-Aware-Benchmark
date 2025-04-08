@@ -65,16 +65,19 @@ CMAKE_BINARY_DIR = /home/murphy/Downloads/cache-aware-benchmark/build
 # The main recursive "all" target.
 all: false_sharing/all
 all: cache_alignment/all
+all: soa_vs_aos/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: false_sharing/preinstall
 preinstall: cache_alignment/preinstall
+preinstall: soa_vs_aos/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: false_sharing/clean
 clean: cache_alignment/clean
+clean: soa_vs_aos/clean
 .PHONY : clean
 
 #=============================================================================
@@ -106,6 +109,21 @@ false_sharing/preinstall:
 # Recursive "clean" directory target.
 false_sharing/clean: false_sharing/CMakeFiles/false_sharing.dir/clean
 .PHONY : false_sharing/clean
+
+#=============================================================================
+# Directory level rules for directory soa_vs_aos
+
+# Recursive "all" directory target.
+soa_vs_aos/all: soa_vs_aos/CMakeFiles/soa_vs_aos.dir/all
+.PHONY : soa_vs_aos/all
+
+# Recursive "preinstall" directory target.
+soa_vs_aos/preinstall:
+.PHONY : soa_vs_aos/preinstall
+
+# Recursive "clean" directory target.
+soa_vs_aos/clean: soa_vs_aos/CMakeFiles/soa_vs_aos.dir/clean
+.PHONY : soa_vs_aos/clean
 
 #=============================================================================
 # Target rules for target false_sharing/CMakeFiles/false_sharing.dir
@@ -158,6 +176,32 @@ cache_alignment: cache_alignment/CMakeFiles/cache_alignment.dir/rule
 cache_alignment/CMakeFiles/cache_alignment.dir/clean:
 	$(MAKE) $(MAKESILENT) -f cache_alignment/CMakeFiles/cache_alignment.dir/build.make cache_alignment/CMakeFiles/cache_alignment.dir/clean
 .PHONY : cache_alignment/CMakeFiles/cache_alignment.dir/clean
+
+#=============================================================================
+# Target rules for target soa_vs_aos/CMakeFiles/soa_vs_aos.dir
+
+# All Build rule for target.
+soa_vs_aos/CMakeFiles/soa_vs_aos.dir/all:
+	$(MAKE) $(MAKESILENT) -f soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build.make soa_vs_aos/CMakeFiles/soa_vs_aos.dir/depend
+	$(MAKE) $(MAKESILENT) -f soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build.make soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/murphy/Downloads/cache-aware-benchmark/build/CMakeFiles --progress-num=5,6 "Built target soa_vs_aos"
+.PHONY : soa_vs_aos/CMakeFiles/soa_vs_aos.dir/all
+
+# Build rule for subdir invocation for target.
+soa_vs_aos/CMakeFiles/soa_vs_aos.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/murphy/Downloads/cache-aware-benchmark/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soa_vs_aos/CMakeFiles/soa_vs_aos.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/murphy/Downloads/cache-aware-benchmark/build/CMakeFiles 0
+.PHONY : soa_vs_aos/CMakeFiles/soa_vs_aos.dir/rule
+
+# Convenience name for target.
+soa_vs_aos: soa_vs_aos/CMakeFiles/soa_vs_aos.dir/rule
+.PHONY : soa_vs_aos
+
+# clean rule for target.
+soa_vs_aos/CMakeFiles/soa_vs_aos.dir/clean:
+	$(MAKE) $(MAKESILENT) -f soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build.make soa_vs_aos/CMakeFiles/soa_vs_aos.dir/clean
+.PHONY : soa_vs_aos/CMakeFiles/soa_vs_aos.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

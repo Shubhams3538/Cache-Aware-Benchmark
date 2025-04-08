@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wno-volatile CMakeFiles/soa_vs_aos.dir/soa_vs_aos.cpp.o -o soa_vs_aos 
