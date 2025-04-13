@@ -9,3 +9,9 @@
 /home/murphy/Downloads/cache-aware-benchmark/build/soa_vs_aos/CMakeFiles/soa_vs_aos.dir
 /home/murphy/Downloads/cache-aware-benchmark/build/soa_vs_aos/CMakeFiles/edit_cache.dir
 /home/murphy/Downloads/cache-aware-benchmark/build/soa_vs_aos/CMakeFiles/rebuild_cache.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/heap_vs_pool/CMakeFiles/heap_vs_pool.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/heap_vs_pool/CMakeFiles/edit_cache.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/heap_vs_pool/CMakeFiles/rebuild_cache.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/numa_access/CMakeFiles/numa_access.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/numa_access/CMakeFiles/edit_cache.dir
+/home/murphy/Downloads/cache-aware-benchmark/build/numa_access/CMakeFiles/rebuild_cache.dir

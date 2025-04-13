@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/murphy/Downloads/cache-aware-benchmark/build/CMakeFiles /home/murphy/Downloads/cache-aware-benchmark/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/murphy/Downloads/cache-aware-benchmark/build/CMakeFiles /home/murphy/Downloads/cache-aware-benchmark/build/heap_vs_pool//CMakeFiles/progress.marks
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 heap_vs_pool/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/murphy/Downloads/cache-aware-benchmark/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 heap_vs_pool/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,83 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 heap_vs_pool/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 heap_vs_pool/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named false_sharing
+# Convenience name for target.
+heap_vs_pool/CMakeFiles/heap_vs_pool.dir/rule:
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 heap_vs_pool/CMakeFiles/heap_vs_pool.dir/rule
+.PHONY : heap_vs_pool/CMakeFiles/heap_vs_pool.dir/rule
 
-# Build rule for target.
-false_sharing: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 false_sharing
-.PHONY : false_sharing
-
-# fast build rule for target.
-false_sharing/fast:
-	$(MAKE) $(MAKESILENT) -f false_sharing/CMakeFiles/false_sharing.dir/build.make false_sharing/CMakeFiles/false_sharing.dir/build
-.PHONY : false_sharing/fast
-
-#=============================================================================
-# Target rules for targets named cache_alignment
-
-# Build rule for target.
-cache_alignment: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cache_alignment
-.PHONY : cache_alignment
-
-# fast build rule for target.
-cache_alignment/fast:
-	$(MAKE) $(MAKESILENT) -f cache_alignment/CMakeFiles/cache_alignment.dir/build.make cache_alignment/CMakeFiles/cache_alignment.dir/build
-.PHONY : cache_alignment/fast
-
-#=============================================================================
-# Target rules for targets named soa_vs_aos
-
-# Build rule for target.
-soa_vs_aos: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soa_vs_aos
-.PHONY : soa_vs_aos
-
-# fast build rule for target.
-soa_vs_aos/fast:
-	$(MAKE) $(MAKESILENT) -f soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build.make soa_vs_aos/CMakeFiles/soa_vs_aos.dir/build
-.PHONY : soa_vs_aos/fast
-
-#=============================================================================
-# Target rules for targets named heap_vs_pool
-
-# Build rule for target.
-heap_vs_pool: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 heap_vs_pool
+# Convenience name for target.
+heap_vs_pool: heap_vs_pool/CMakeFiles/heap_vs_pool.dir/rule
 .PHONY : heap_vs_pool
 
 # fast build rule for target.
 heap_vs_pool/fast:
-	$(MAKE) $(MAKESILENT) -f heap_vs_pool/CMakeFiles/heap_vs_pool.dir/build.make heap_vs_pool/CMakeFiles/heap_vs_pool.dir/build
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f heap_vs_pool/CMakeFiles/heap_vs_pool.dir/build.make heap_vs_pool/CMakeFiles/heap_vs_pool.dir/build
 .PHONY : heap_vs_pool/fast
 
-#=============================================================================
-# Target rules for targets named numa_access
+heap_vs_pool.o: heap_vs_pool.cpp.o
+.PHONY : heap_vs_pool.o
 
-# Build rule for target.
-numa_access: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 numa_access
-.PHONY : numa_access
+# target to build an object file
+heap_vs_pool.cpp.o:
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f heap_vs_pool/CMakeFiles/heap_vs_pool.dir/build.make heap_vs_pool/CMakeFiles/heap_vs_pool.dir/heap_vs_pool.cpp.o
+.PHONY : heap_vs_pool.cpp.o
 
-# fast build rule for target.
-numa_access/fast:
-	$(MAKE) $(MAKESILENT) -f numa_access/CMakeFiles/numa_access.dir/build.make numa_access/CMakeFiles/numa_access.dir/build
-.PHONY : numa_access/fast
+heap_vs_pool.i: heap_vs_pool.cpp.i
+.PHONY : heap_vs_pool.i
+
+# target to preprocess a source file
+heap_vs_pool.cpp.i:
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f heap_vs_pool/CMakeFiles/heap_vs_pool.dir/build.make heap_vs_pool/CMakeFiles/heap_vs_pool.dir/heap_vs_pool.cpp.i
+.PHONY : heap_vs_pool.cpp.i
+
+heap_vs_pool.s: heap_vs_pool.cpp.s
+.PHONY : heap_vs_pool.s
+
+# target to generate assembly for a file
+heap_vs_pool.cpp.s:
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(MAKE) $(MAKESILENT) -f heap_vs_pool/CMakeFiles/heap_vs_pool.dir/build.make heap_vs_pool/CMakeFiles/heap_vs_pool.dir/heap_vs_pool.cpp.s
+.PHONY : heap_vs_pool.cpp.s
 
 # Help Target
 help:
@@ -189,11 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cache_alignment"
-	@echo "... false_sharing"
 	@echo "... heap_vs_pool"
-	@echo "... numa_access"
-	@echo "... soa_vs_aos"
+	@echo "... heap_vs_pool.o"
+	@echo "... heap_vs_pool.i"
+	@echo "... heap_vs_pool.s"
 .PHONY : help
 
 
@@ -205,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/murphy/Downloads/cache-aware-benchmark/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

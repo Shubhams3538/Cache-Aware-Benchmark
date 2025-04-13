@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wno-volatile CMakeFiles/numa_access.dir/numa_access.cpp.o -o numa_access  -lnuma 

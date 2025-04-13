@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wno-volatile CMakeFiles/heap_vs_pool.dir/heap_vs_pool.cpp.o -o heap_vs_pool 
